@@ -84,7 +84,7 @@ def main(N_bandits=10, epsilon=0.1):
     ax.set_xscale("log", nonposx='clip')
     plt.xlim([1, trials])
     if save_fig:
-        output_file = "regrets_" + str(N_bandits) + "_" + str(epsilon) + save_format
+        output_file = "results/regrets_" + str(N_bandits) + "_" + str(epsilon) + save_format
         plt.savefig(output_file, bbox_inches="tight")
     else:
         plt.show()
